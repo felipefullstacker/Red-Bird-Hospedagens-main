@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RED BIRD HOSPEDAGENS</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container pt-1 pb-1">
+            <a class="navbar-brand fw-bold" href="#">RED BIRD HOSPEDAGENS</a>
+            <img src="./assets/img/icone.jpg" alt="" style="width: 40px;">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    
+                    <li class="nav-item d-block d-md-none d-lg-none pt-2 pb-2">
+                        <a href="#" type="button" class="btn btn-green w-100 rounded-0">Login</a>
+                    </li>
+                    <!-- End Botão tela menor -->
+                    <li class="nav-item d-none d-md-block d-lg-block">
+                        <a href="#" type="button" class="btn btn-green rounded-0 ps-lg-5 pe-lg-5">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fim Navbar FDP -->
+
+    <!-- Banner -->
+    <main class="w-100 min-vh-100 background-banner d-flex align-items-center">
+        <div class="container">
+            <div class="card rounded-1 border-0 p-1 pt-4 pb-4 p-lg-4 pb-md-0 pb-lg-0 shadow">
+                <div class="card-body">
+                    <form class="pb-lg-2" onsubmit="return false;">
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-3 mb-3">
+                                <label for="localizacao" class="form-label fw-bold">Localização</label>
+                                <input type="text" class="form-control rounded-0" name="localizacao" id="localizacao"
+                                    placeholder="Digite a localização">
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-2 mb-3">
+                                <label for="entrada" class="form-label fw-bold">Entrada</label>
+                                <input type="date" class="form-control rounded-0" name="entrada" id="entrada">
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-2 mb-3">
+                                <label for="saida" class="form-label fw-bold">Saída</label>
+                                <input type="date" class="form-control rounded-0" name="saida" id="saida">
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-3 mb-3">
+                                <label for="periodo" class="form-label fw-bold">Período</label>
+                                <select class="form-select rounded-0" name="periodo" id="periodo"
+                                    aria-label="Selecione o período">
+                                    <option value="" selected>Selecione o período</option>
+                                    <option value="madrugada">Madrugada</option>
+                                    <option value="manha">Manhã</option>
+                                    <option value="tarde">Tarde</option>
+                                    <option value="noite">Noite</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-2 mb-3 pt-3 d-lg-flex align-items-end">
+                                <a href="#" class="btn btn-lg btn-green w-100 rounded-0 border-0 p-lg-1">
+                                    Pesquisar
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Fim do Banner -->
+
+    <!-- Destaques RBS -->
+    <main class="w-100 pb-5 pt-lg-4 pb-lg-5">
+        <div class="container pt-5 pb-2 pt-lg-5 pb-lg-0">
+            <h1 class="fs-4 text-center text-lg-start mb-5 fw-bold">
+             Hoteis RBS Em Destaque
+            </h1>
+            <div class="row mb-4">
+                <div class="col-12 col-md-12 col-lg-4 mb-5">
+                    <div class="card shadow border-0">
+                        <div class="position-relative">
+                            <img src="./assets/img/hoteis/hotel-1.jpeg" alt="Hotel 01" class="card-img-top">
+                            <span class="position-absolute 
+                            bottom-0 
+                            right-0 
+                            bg-color-green 
+                            ps-2 
+                            pe-2 
+                            pt-1 
+                            pb-1">
+                                R$: 669,00
+                            </span>
+                        </div>
+                        <div class="card-body p-3">
+                            <h5 class="card-title mb-1">Hotel Cururu</h5>
+                            <p class="text-muted">Palmácia/CE</p>
+                            <p class="card-text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, ut aperiam in consequuntur sint libero.
+                            </p>
+                            <a href="#" class="btn btn-green rounded-0 w-100">Verificar disponibilidade</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 mb-5">
+                    <div class="card shadow border-0">
+                        <div class="position-relative">
+                            <img src="./assets/img/hoteis/hotel-2.jpeg" alt="Hotel 01" class="card-img-top">
+                            <span class="position-absolute 
+                            bottom-0 
+                            right-0 
+                            bg-color-green 
+                            ps-2 
+                            pe-2 
+                            pt-1 
+                            pb-1">
+                                R$: 860,00
+                            </span>
+                        </div>
+                        <div class="card-body p-3">
+                            <h5 class="card-title mb-1">Hotel Golum</h5>
+                            <p class="text-muted">Guaramiranga/CE</p>
+                            <p class="card-text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, ut aperiam in consequuntur sint libero.
+                            </p>
+                            <a href="#" class="btn btn-green rounded-0 w-100">Verificar disponibilidade</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 mb-5">
+                    <div class="card shadow border-0">
+                        <div class="position-relative">
+                            <img src="./assets/img/hoteis/hotel-3.jpeg" alt="Hotel 01" class="card-img-top">
+                            <span class="position-absolute 
+                            bottom-0 
+                            right-0 
+                            bg-color-green 
+                            ps-2 
+                            pe-2 
+                            pt-1 
+                            pb-1">
+                                R$: 789,90
+                            </span>
+                        </div>
+                        <div class="card-body p-3">
+                            <h5 class="card-title mb-1">Pousada Platinada</h5>
+                            <p class="text-muted">Oiticica/CE</p>
+                            <p class="card-text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, ut aperiam in consequuntur sint libero.
+                            </p>
+                            <a href="#" class="btn btn-green rounded-0 w-100">Verificar disponibilidade</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <a href="#" class="btn btn-green-outline ps-4 pe-4">
+                        Ver tudin
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Fim Destaques RBS -->
+    
+    <!-- Promoções -->
+    <main class="w-100 pb-5 pb-lg-5">
+        <div class="container">
+            <div class="w-100 title mb-5 mb-md-5 mb-lg-5 pt-lg-4 pb-lg-0">
+                <h1 class="fs-4 text-center text-lg-start mb-2 fw-bold">
+                    Nossos cururus em promoções
+                </h1>
+            </div>
+            <div class="row mb-4">
+                <div class="col-12 col-md-12 col-lg-4 mb-5">
+                    <div class="card shadow border 0">
+                        <div class="position-relative">
+                            <img src="./assets/img/hoteis/hotel-4.jpeg" alt="" class="card-img-top">
+                            <span class="position-absolute bottom-0
+                            right-0
+                            bg-color-roxo
+                            ps-2
+                            pe-2
+                            pt-1
+                            pb-1">
+                            R$: 350,00
+                        </span>
+                        </div>
+                        <div class="card-body p-3">
+                            <h5 class="card-title mb-1">
+                                Hotel Bolachinha
+                            </h5>
+                            <p class="text-muted">Palmácia/CE</p>
+                            <a href="#" class="btn btn-green rounded-1 w-100"> Verificar Disponibilidade</a>
+                        </div>
+                    </div>
+                </div>  
+                
+                <div class="col-12 col-md-12 col-lg-4 mb-5">
+                    <div class="card shadow border 0">
+                        <div class="position-relative">
+                            <img src="./assets/img/hoteis/hotel-5.jpeg" alt="" class="card-img-top">
+                            <span class="position-absolute bottom-0
+                            right-0
+                            bg-color-roxo
+                            ps-2
+                            pe-2
+                            pt-1
+                            pb-1">
+                            R$: 280,00
+                        </span>
+                        </div>
+                        <div class="card-body p-3">
+                            <h5 class="card-title mb-1">
+                                Hotel Brinquedin
+                            </h5>
+                            <p class="text-muted">Baturité/CE</p>
+                            <a href="#" class="btn btn-green rounded-1 w-100"> Verificar Disponibilidade</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-4 mb-5">
+                    <div class="card shadow border 0">
+                        <div class="position-relative">
+                            <img src="./assets/img/hoteis/hotel-6.jpeg" alt="" class="card-img-top">
+                            <span class="position-absolute bottom-0
+                            right-0
+                            bg-color-roxo
+                            ps-2
+                            pe-2
+                            pt-1
+                            pb-1">
+                            R$: 399,00
+                        </span>
+                        </div>
+                        <div class="card-body p-3">
+                            <h5 class="card-title mb-1">
+                                Chalé Boa Esperança
+                            </h5>
+                            <p class="text-muted">Linha da Serra/CE</p>
+                            <a href="#" class="btn btn-green rounded-1 w-100"> Verificar Disponibilidade</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <a href="#" class="btn btn-green-outline ps-4 pe-4">
+                        Ver tudin
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+     <!--Fim das Promoções -->
+
+      <!-- Coisitas -->
+      <main class="w-100">
+        <div class="container">
+            <div class="w-100 title mb-5 mb-md-5 mb-lg-5 pt-lg-4 pb-lg-0">
+                <h1 class="fs-4 text-center text-md-start text-lg-start mb-2 fw-bold">
+                    Vejam nossas coisitas
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 col-md-4 col-lg-4 col-mb-4">
+                            <div class="card">
+                                <img src="./assets/img/utilidades/camera.jpeg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        Camera de Segurança
+                                    </div>
+                                    <p class="card-text text-muted"> Sorria você está sendo filmado</p>
+
+                                    <p class="card-text text-muted"> Por isso sempre compramos camueiras</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 col-lg-4 col-mb-4">
+                            <div class="card">
+                                <img src="./assets/img/utilidades/campo.jpeg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        Mucha Diversion
+                                    </div>
+                                    <p class="card-text text-muted"> Brinque e se divirta</p>
+
+                                    <p class="card-text text-muted"> Ihaaaaaaa</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 col-lg-4 col-mb-4">
+                            <div class="card">
+                                <img src="./assets/img/utilidades/piscina.jpeg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        Pscuina
+                                    </div>
+                                    <p class="card-text text-muted"> Toma bain fedorento</p>
+
+                                    <p class="card-text text-muted"> Tibum na pscina</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+    crossorigin="anonymous"></script>
+
+</html>

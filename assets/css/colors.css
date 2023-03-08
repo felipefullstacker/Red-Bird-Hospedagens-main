@@ -1,0 +1,8 @@
+.bg-color-green {
+    color: var(--bg-white);
+    background-color: var(--bg-green);
+}
+.bg-color-roxo {
+    color: var(--bg-white);
+    background-color: var(--bg-roxo);
+}

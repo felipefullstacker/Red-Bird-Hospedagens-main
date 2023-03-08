@@ -1,0 +1,29 @@
+.btn-green {
+    color: var(--bg-white);
+    background-color: var(--bg-green);
+    outline: none;
+    box-shadow: none;
+    font-size: 1rem;
+    font-family: 'Ruda', sans-serif;
+    font-weight: 400;
+}
+.btn-green:hover {
+    color: var(--bg-white);
+    background-color: var(--bg-green-hover);
+}
+
+.btn-green-outline {
+    color: var(--bg-green);
+    background-color: transparent;
+    outline: 2px solid var(--bg-green);
+    box-shadow: none;
+    font-size: 1rem;
+    font-family: 'Ruda', sans-serif;
+    font-weight: 400;
+}
+.btn-green-outline:hover {
+    color: var(--bg-white);
+    background-color: var(--bg-green);
+    border-radius: 0px;
+    outline: none;
+}
